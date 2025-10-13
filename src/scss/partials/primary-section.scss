@@ -1,0 +1,36 @@
+@use "../variables.scss" as vars;
+
+.primary_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 15px;
+
+  .green {
+    font-size: 14px;
+    font-weight: normal;
+    color: vars.$primary-color;
+  }
+  h2 {
+    font-family: vars.$secondary-font;
+    font-size: 22px;
+    font-weight: bold;
+    color: vars.$black-color;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  a {
+    border: 2px solid vars.$primary-color;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: vars.$primary-color;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 40px;
+    width: fit-content;
+    margin-top: 40px;
+  }
+}
