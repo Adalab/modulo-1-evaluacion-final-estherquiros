@@ -1,3 +1,5 @@
+@use "./variables.scss" as vars; 
+
 * {
   margin: 0;
   padding: 0;
@@ -5,19 +7,10 @@
 }
 
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: vars.$main-font;
 }
 
 body {
-  background-color: #555;
-  color: #fff;
-}
-
-.header {
-  border-bottom: solid 5px darkcyan;
-}
-
-.title {
-  line-height: 4rem;
-  padding-inline: 2rem;
+  background-color: vars.$white-color;
+  color: vars.$detail-color;
 }
