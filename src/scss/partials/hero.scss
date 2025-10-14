@@ -39,4 +39,12 @@
     align-items: center;
     justify-content: center;
   }
+  @media (width >= vars.$tablet-bp) {
+    h1 {
+      font-size: 75px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
 }
