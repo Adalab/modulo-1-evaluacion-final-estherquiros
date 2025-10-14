@@ -71,7 +71,7 @@
     justify-self: center;
   }
 
-  /* >= MOBILE */
+  /* >= TABLET */
 
   @media (width >= vars.$tablet-bp) {
     width: vars.$tablet-bp;
@@ -85,5 +85,10 @@
     p {
       font-size: 18px;
     }
+  }
+
+  /* >= DESKTOP */
+  @media (width >= vars.$desktop-bp) {
+    width: vars.$desktop-bp;
   }
 }
