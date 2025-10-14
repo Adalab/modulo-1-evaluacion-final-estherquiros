@@ -21,6 +21,11 @@
   justify-self: anchor-center;
   align-self: anchor-center;
   margin: auto;
+
+  @media (width >= vars.$tablet-bp) {
+    height: 45px;
+    width: 45px;
+  }
 }
 
 .footer {
