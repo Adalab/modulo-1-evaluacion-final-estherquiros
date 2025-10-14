@@ -1,0 +1,42 @@
+@use "../variables.scss" as vars;
+
+.footer {
+  background-color: vars.$detail-color;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+
+  .footer-enlace {
+    color: vars.$white-color;
+    text-decoration: none;
+  }
+  .footer-elemento {
+    text-align: center;
+    font-family: vars.$main-font;
+    font-size: 16px;
+  }
+  .footer-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-listas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-copy {
+    color: vars.$white-color;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-family: vars.$main-font;
+  }
+  .corazon {
+    color: vars.$primary-color;
+  }
+}
