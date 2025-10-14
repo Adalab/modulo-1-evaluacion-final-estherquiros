@@ -11,17 +11,17 @@
     font-weight: normal;
     color: vars.$primary-color;
   }
-  h2 {
+  .primary-title {
     font-family: vars.$secondary-font;
     font-size: 22px;
     font-weight: bold;
     color: vars.$black-color;
   }
-  p {
+  .primary-parrafo {
     font-size: 18px;
     line-height: 1.67;
   }
-  a {
+  .primary-a {
     border: 2px solid vars.$primary-color;
     border-radius: 50px;
     font-size: 20px;
@@ -41,10 +41,10 @@
     .green {
       font-size: 16px;
     }
-    h2 {
+    .primary-title {
       font-size: 32px;
     }
-    p {
+    .primary-parrafo {
       font-size: 20px;
     }
   }

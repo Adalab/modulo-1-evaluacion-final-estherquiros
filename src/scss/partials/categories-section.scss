@@ -21,7 +21,7 @@
     align-items: center;
   }
 
-  small {
+  .categories-small {
     font-family: vars.$main-font;
     color: vars.$detail-color;
     grid-column: span 3;
@@ -29,12 +29,12 @@
     font-size: 12px;
     font-weight: bold;
   }
-  article {
+  .categories-article {
     grid-column: span 3;
     width: 120px;
     justify-self: anchor-center;
   }
-  h2 {
+  .categories-title {
     grid-column: span 3;
     justify-self: center;
     color: vars.$black-color;
@@ -42,12 +42,12 @@
     font-size: 20px;
     font-weight: bold;
   }
-  img {
+  .categories-img {
     width: inherit;
     border-radius: 100px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
-  p {
+  .categories-parrafo {
     grid-column: span 3;
     text-align: center;
     white-space: nowrap;
@@ -56,7 +56,7 @@
     font-size: 14px;
     font-family: vars.$secondary-font;
   }
-  a {
+  .categories-button {
     grid-column: span 3;
     border: 2px solid vars.$primary-color;
     border-radius: 50px;
@@ -76,13 +76,13 @@
   @media (width >= vars.$tablet-bp) {
     width: vars.$tablet-bp;
 
-    article {
+    .categories-article {
       grid-column: span 1;
     }
-    h2 {
+    .categories-title {
       font-size: 28px;
     }
-    p {
+    .categories-parrafo {
       font-size: 18px;
     }
   }

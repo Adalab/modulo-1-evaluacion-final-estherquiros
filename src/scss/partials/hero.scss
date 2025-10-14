@@ -14,7 +14,7 @@
   padding: 40px;
   gap: 20px;
 
-  h1 {
+  .hero-title {
     color: vars.$white-color;
     font-family: vars.$secondary-font;
     line-height: 1.67;
@@ -22,7 +22,7 @@
     font-weight: bold;
   }
 
-  p {
+  .hero-parrafo {
     color: vars.$white-color;
     font-family: vars.$main-font;
     font-size: 16px;
@@ -40,10 +40,10 @@
     justify-content: center;
   }
   @media (width >= vars.$tablet-bp) {
-    h1 {
+    .hero-title {
       font-size: 75px;
     }
-    p {
+    .hero-parrafo {
       font-size: 24px;
     }
     .down {
