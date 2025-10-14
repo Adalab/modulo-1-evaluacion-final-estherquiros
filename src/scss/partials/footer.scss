@@ -74,7 +74,8 @@
   }
 
   .footer-enlace:hover {
-    color: darken($color: vars.$white-color, $amount: 10);
+    color: darken($color: vars.$white-color, $amount: 20);
+    text-decoration: underline;
     transition: all;
     transition-duration: 200ms;
   }
