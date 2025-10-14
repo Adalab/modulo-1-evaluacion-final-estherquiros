@@ -1,0 +1,66 @@
+@use "../variables.scss" as vars;
+
+.categories-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: vars.$secondary-color;
+  padding: 20px;
+  gap: 20px;
+
+  .title-categories {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+
+  small {
+    font-family: vars.$main-font;
+    color: vars.$detail-color;
+    grid-column: span 3;
+    justify-self: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  article {
+    grid-column: span 3;
+    width: 120px;
+    justify-self: anchor-center;
+  }
+  h2 {
+    grid-column: span 3;
+    justify-self: center;
+    color: vars.$black-color;
+    font-family: vars.$secondary-font;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  img {
+    width: inherit;
+    border-radius: 100px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  p {
+    grid-column: span 3;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    color: vars.$black-color;
+    font-size: 14px;
+  }
+  a {
+    grid-column: span 3;
+    border: 2px solid vars.$primary-color;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: vars.$white-color;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    width: fit-content;
+    background-color: vars.$primary-color;
+    justify-self: center;
+  }
+}
