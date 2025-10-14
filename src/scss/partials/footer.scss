@@ -28,6 +28,12 @@
   }
 }
 
+.button-top:hover {
+  background-color: darken($color: vars.$white-color, $amount: 10);
+  transition: all;
+  transition-duration: 200ms;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -65,6 +71,12 @@
   }
   .corazon {
     color: vars.$primary-color;
+  }
+
+  .footer-enlace:hover {
+    color: darken($color: vars.$white-color, $amount: 10);
+    transition: all;
+    transition-duration: 200ms;
   }
 
   @media (width >= vars.$tablet-bp) {

@@ -71,6 +71,12 @@
     justify-self: center;
   }
 
+  .categories-button:hover {
+    background-color: darken($color: vars.$primary-color, $amount: 10);
+    transition: all;
+    transition-duration: 200ms;
+  }
+
   /* >= TABLET */
 
   @media (width >= vars.$tablet-bp) {

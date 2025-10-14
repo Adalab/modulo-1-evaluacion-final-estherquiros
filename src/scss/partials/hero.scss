@@ -39,6 +39,12 @@
     align-items: center;
     justify-content: center;
   }
+  .down:hover {
+    background-color: darken($color: vars.$white-color, $amount: 10);
+    transition: all;
+    transition-duration: 200ms;
+  }
+
   @media (width >= vars.$tablet-bp) {
     .hero-title {
       font-size: 75px;

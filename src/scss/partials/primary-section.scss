@@ -33,6 +33,11 @@
     width: fit-content;
     margin-top: 40px;
   }
+  .primary-a:hover {
+    background-color: darken($color: vars.$white-color, $amount: 10);
+    transition: all;
+    transition-duration: 200ms;
+  }
 
   @media (width >= vars.$tablet-bp) {
     max-width: vars.$desktop-bp;

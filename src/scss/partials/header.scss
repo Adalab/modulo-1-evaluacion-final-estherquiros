@@ -5,6 +5,12 @@
   padding: 10px;
 }
 
+.menu_hamburguesa:hover {
+  background-color: darken($color: vars.$primary-color, $amount: 10);
+  transition: all;
+  transition-duration: 200ms;
+}
+
 .header {
   position: fixed;
   top: 0;
