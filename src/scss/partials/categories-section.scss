@@ -1,9 +1,15 @@
 @use "../variables.scss" as vars;
 
+.categories-bg {
+  background-color: vars.$secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .categories-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: vars.$secondary-color;
   padding: 20px;
   gap: 20px;
 
@@ -62,5 +68,15 @@
     width: fit-content;
     background-color: vars.$primary-color;
     justify-self: center;
+  }
+
+  /* >= MOBILE */
+
+  @media (width >= vars.$tablet-bp) {
+    width: vars.$tablet-bp;
+
+    article {
+      grid-column: span 1;
+    }
   }
 }
