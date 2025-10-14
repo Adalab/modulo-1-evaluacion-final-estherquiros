@@ -1,11 +1,33 @@
 @use "../variables.scss" as vars;
 
-.footer {
+.section-footer {
   background-color: vars.$detail-color;
+}
+
+.section-button-top {
+  height: 0;
+  position: relative;
+}
+
+.button-top {
+  background-color: vars.$white-color;
+  border-radius: 100px;
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  justify-self: anchor-center;
+  align-self: anchor-center;
+  margin: auto;
+}
+
+.footer {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 40px;
+  padding: 50px 40px;
 
   .footer-enlace {
     color: vars.$white-color;
@@ -38,5 +60,33 @@
   }
   .corazon {
     color: vars.$primary-color;
+  }
+
+  @media (width >= vars.$tablet-bp) {
+    width: vars.$tablet-bp;
+
+    flex-direction: row-reverse;
+    justify-content: center;
+    justify-self: center;
+    gap: 160px;
+
+    .footer-elemento {
+      text-align: left;
+    }
+
+    .footer-listas {
+      flex-direction: row;
+      gap: 160px;
+    }
+  }
+
+  /* >= DESKTOP */
+  @media (width >= vars.$desktop-bp) {
+    width: vars.$desktop-bp;
+    gap: 240px;
+    .footer-listas {
+      flex-direction: row;
+      gap: 240px;
+    }
   }
 }
