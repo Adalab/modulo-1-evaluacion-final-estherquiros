@@ -33,6 +33,19 @@
     width: fit-content;
     margin-top: 40px;
   }
-}
-@media (width >= vars.$tablet-bp) {
+
+  @media (width >= vars.$tablet-bp) {
+    max-width: vars.$desktop-bp;
+    justify-self: center;
+
+    .green {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
 }
