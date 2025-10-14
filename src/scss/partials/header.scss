@@ -1,11 +1,11 @@
 @use "../variables.scss" as vars;
 
 .menu_hamburguesa {
-    background-color: vars.$primary-color ;
-    padding: 10px;
+  background-color: vars.$primary-color;
+  padding: 10px;
 }
 
-header {
-    position: fixed;
-    top: 0;
+.header {
+  position: fixed;
+  top: 0;
 }
