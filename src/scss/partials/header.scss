@@ -1,11 +1,11 @@
 @use "../variables.scss" as vars;
 
-.menu_hamburguesa {
+.hamburger_menu {
   background-color: vars.$primary-color;
   padding: 10px;
 }
 
-.menu_hamburguesa:hover {
+.hamburger_menu:hover {
   background-color: darken($color: vars.$primary-color, $amount: 10);
   transition: all;
   transition-duration: 200ms;

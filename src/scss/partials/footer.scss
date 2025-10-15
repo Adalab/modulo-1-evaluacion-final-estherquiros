@@ -52,7 +52,7 @@
     }
   }
 
-  .footer-enlace {
+  .footer-link {
     color: vars.$white-color;
     text-decoration: none;
     position: relative;
@@ -65,17 +65,17 @@
       animation: pulse 1s ease-in-out infinite;
     }
   }
-  .footer-elemento {
+  .footer-item {
     text-align: center;
     font-family: vars.$main-font;
     font-size: 16px;
   }
-  .footer-lista {
+  .footer-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-  .footer-listas {
+  .footer-lists {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -90,7 +90,7 @@
     font-size: 14px;
     font-family: vars.$main-font;
   }
-  .corazon {
+  .heart {
     color: vars.$primary-color;
   }
 
@@ -103,11 +103,11 @@
     justify-self: center;
     gap: 160px;
 
-    .footer-elemento {
+    .footer-item {
       text-align: left;
     }
 
-    .footer-listas {
+    .footer-lists {
       flex-direction: row;
       gap: 160px;
     }
@@ -118,7 +118,7 @@
     width: 100%;
     max-width: vars.$desktop-bp;
     gap: 240px;
-    .footer-listas {
+    .footer-lists {
       flex-direction: row;
       gap: 240px;
     }
