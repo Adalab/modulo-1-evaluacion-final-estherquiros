@@ -69,12 +69,12 @@
     width: fit-content;
     background-color: vars.$primary-color;
     justify-self: center;
+    transition: all 200ms ease-in-out;
   }
 
   .categories-button:hover {
     background-color: darken($color: vars.$primary-color, $amount: 10);
-    transition: all;
-    transition-duration: 200ms;
+    transform: scale(1.05);
   }
 
   /* >= TABLET */

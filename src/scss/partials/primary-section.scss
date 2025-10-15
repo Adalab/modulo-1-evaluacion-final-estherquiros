@@ -32,11 +32,11 @@
     padding: 10px 40px;
     width: fit-content;
     margin-top: 40px;
+    transition: all 200ms ease-in-out;
   }
   .primary-a:hover {
     background-color: darken($color: vars.$white-color, $amount: 10);
-    transition: all;
-    transition-duration: 200ms;
+    transform: scale(1.05);
   }
 
   @media (width >= vars.$tablet-bp) {
