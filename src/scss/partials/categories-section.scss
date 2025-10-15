@@ -80,7 +80,8 @@
   /* >= TABLET */
 
   @media (width >= vars.$tablet-bp) {
-    width: vars.$tablet-bp;
+    width: 100%;
+    max-width: vars.$tablet-bp;
 
     .categories-article {
       grid-column: span 1;
@@ -95,6 +96,7 @@
 
   /* >= DESKTOP */
   @media (width >= vars.$desktop-bp) {
-    width: vars.$desktop-bp;
+    width: 100%;
+    max-width: vars.$desktop-bp;
   }
 }

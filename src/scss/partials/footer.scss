@@ -95,7 +95,8 @@
   }
 
   @media (width >= vars.$tablet-bp) {
-    width: vars.$tablet-bp;
+    width: 100%;
+    max-width: vars.$tablet-bp;
 
     flex-direction: row-reverse;
     justify-content: center;
@@ -114,7 +115,8 @@
 
   /* >= DESKTOP */
   @media (width >= vars.$desktop-bp) {
-    width: vars.$desktop-bp;
+    width: 100%;
+    max-width: vars.$desktop-bp;
     gap: 240px;
     .footer-listas {
       flex-direction: row;
