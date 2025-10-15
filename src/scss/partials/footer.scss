@@ -40,9 +40,30 @@
   gap: 40px;
   padding: 50px 40px;
 
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
   .footer-enlace {
     color: vars.$white-color;
     text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: darken($color: vars.$white-color, $amount: 20);
+      text-decoration: underline;
+      animation: pulse 1s ease-in-out infinite;
+    }
   }
   .footer-elemento {
     text-align: center;
@@ -71,13 +92,6 @@
   }
   .corazon {
     color: vars.$primary-color;
-  }
-
-  .footer-enlace:hover {
-    color: darken($color: vars.$white-color, $amount: 20);
-    text-decoration: underline;
-    transition: all;
-    transition-duration: 200ms;
   }
 
   @media (width >= vars.$tablet-bp) {
